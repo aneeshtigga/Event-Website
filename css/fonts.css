@@ -1,0 +1,12 @@
+@font-face {
+font-family: "RexBold";
+src: url("./fonts/rexbold.otf") format("opentype");
+}
+@font-face {
+font-family: "RexLight";
+src: url("./fonts/rexlight.otf") format("opentype");
+}
+@font-face {
+font-family: "RexBoldInline";
+src: url("./fonts/rexboldinline.otf") format("opentype");
+}

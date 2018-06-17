@@ -1,0 +1,375 @@
+.col-6, .col-5, .col-4, .col-H {
+	border:1px solid black !important;
+	background-color: #ffb400;
+}
+
+body {
+	color: #000000 !important;
+}
+
+.mh1{
+  height: 50vh; /* 50% of viewport height*/
+}
+
+.col-H {
+  -ms-flex: 0 0 4.1666665%;
+  flex: 0 0 4.1666665%;
+  max-width: 4.1666665%;
+  position: relative;
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+  background-color: #fff;
+  display: table;
+  height: 100%;
+}
+
+.col {
+	border:1px solid black !important;
+	background-color: #1c1c1c;
+}
+
+.logo {
+    position: absolute;
+    width: 150px;
+    margin: 15px;
+    left: 0px;
+}
+
+.btn1 {
+	position: absolute;
+	right: 0px;
+	margin: 15px;
+	font-size: 15px;
+}
+
+.eventlogo {
+	position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.bc {
+	width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 14vh;
+    min-width: 100px;
+    max-width: 300px;
+}
+
+.deff {
+	font-size: 13px;
+	font-style: italic;
+	margin-top: 20px;
+	color: #fff;
+}
+
+#note {
+	font-weight: 1000;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: fit-content;
+	margin-top: 15vh;
+	font-size: 200%;
+	color: #1c1c1c;
+	line-height: 100%;
+}
+
+.butt {
+	margin-left: auto;
+    display: block;
+    margin-right: auto;
+    width: fit-content;
+    margin-top: 45px;
+    font-size: 15px;
+}
+
+
+/*---------------------------------------
+MAP
+---------------------------------------*/
+
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+#map {
+  height: 100%;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* The location pointed to by the popup tip. */
+.popup-tip-anchor {
+  height: 0;
+  position: absolute;
+  /* The max width of the info window. */
+  width: 300px;
+}
+/* The bubble is anchored above the tip. */
+.popup-bubble-anchor {
+  position: absolute;
+  width: 100%;
+  bottom: /* TIP_HEIGHT= */ 8px;
+  left: 0;
+}
+/* Draw the tip. */
+.popup-bubble-anchor::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* Center the tip horizontally. */
+  transform: translate(-50%, 0);
+  /* The tip is a https://css-tricks.com/snippets/css/css-triangle/ */
+  width: 0;
+  height: 0;
+  /* The tip is 8px high, and 12px wide. */
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: /* TIP_HEIGHT= */ 8px solid #1c1c1c;
+}
+/* The popup bubble itself. */
+.popup-bubble-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-10%, -100%);
+  /* Style the info window. */
+  background-color: #1c1c1c;
+  padding: 5px;
+  border-radius: 5px;
+  font-family: sans-serif;
+  overflow-y: auto;
+  max-height: 60px;
+  box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.5);
+}
+
+#content {
+	color: #ffb400;
+	font-size: 12px;
+}
+
+ul, li{
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.socials {
+	margin-left: auto;
+    display: block;
+    width: 100%;
+    margin-right: auto;
+    max-height: 22px;
+}
+
+.fa {
+	color: #1c1c1c;
+	font-size: 150% !important;
+	max-width: 10px;
+	display: block !important;
+}
+
+.vertical-menu {
+    width: 100%; /* Set a width if you like */
+    display: table-cell;
+    vertical-align: middle;
+    background-color: #ffb400;
+}
+
+.vertical-menu a { /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 18px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+    background-color: #ffb400; /* Dark grey background on mouse-over */
+    -webkit-transition: background-color 0.2s ease-out;
+	-moz-transition: background-color 0.2s ease-out;
+	-o-transition: background-color 0.2s ease-out;
+	transition: background-color 0.2s ease-out;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.vertical-menu a.active {
+    background-color: #4CAF50; /* Add a green color to the "active/current" link */
+    color: white;
+}
+
+/*-----------------------------------------
+AUDIO PLAYER
+-----------------------------------------*/
+
+#audioplayer{
+    width: fit-content;
+    height: 60px;
+    margin: 50px auto auto auto;
+  border: 2px black solid;
+  display: table;
+  min-width: 300px;
+}
+
+#pButton{
+    height:30px; 
+    width: 30px;
+    border: none;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    float:left;
+    outline:none;
+    margin: -10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.play{background: url('http://www.alexkatz.me/codepen/img/play.png') ;}
+.pause{background: url('http://www.alexkatz.me/codepen/img/pause.png') ;}
+
+#timeline{
+    width: 200px;
+    height: 10px;
+    float: left;
+    border-radius: 5px;
+    background: rgba(0,0,0,.3);
+  
+}
+#playhead{
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    margin-top: 1px;
+    background: rgba(0, 0, 0,1);
+
+}
+
+.mus {
+	color: #1c1c1c;
+	font-size: 12px;
+	font-family: Roboto;
+	margin: 5px;
+	font-weight: bold;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 5px;
+}
+
+.player {
+	display: table-cell;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+.col-H div:hover {
+	background-color: #fff;
+}
+
+.col-H div {
+	-webkit-transition-property: background;
+       -moz-transition-property: background;
+         -o-transition-property: background;
+            transition-property: background;
+    -webkit-transition-duration: 0.2s;
+       -moz-transition-duration: 0.2s;
+         -o-transition-duration: 0.2s;
+            transition-duration: 0.2s;
+    -webkit-transition-timing-function: linear;
+       -moz-transition-timing-function: linear;
+         -o-transition-timing-function: linear;
+            transition-timing-function: linear;
+}
+
+.modal-title {
+	margin-left: auto;
+	display: block;
+	margin-right: auto;
+}
+
+.modal-header {
+	border-bottom: 0px;
+}
+
+.modal-footer {
+	border-top: 0px;
+}
+
+.modal-content {
+	display: table;
+	background-color: #ffb400;
+}
+
+.modal-body {
+	border-collapse: separate;
+	border-spacing: 15vh 6vh;
+}
+
+.card {
+	display: table-cell;
+	border-radius: 1.25rem;
+	border: 1px solid black;
+	max-width: 15em !important;
+}
+
+.modal-lgt {
+	max-width: fit-content;
+}
+
+.card-img-top {
+	border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+    height: 90%;
+}
+
+.card-text {
+	font-family: RexBoldInline;
+	margin-bottom: 30% !important;
+}
+
+.supbut {
+    bottom: 10%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    left: 0px;
+    right: 0px;
+}
+
+.modal-footer {
+	justify-content: center !important;
+}
+
+.bot {
+	font-size: 350% !important;
+	font-weight: lighter;
+	text-shadow: 0 0px 0;
+	opacity: 1;
+}
+
+.fb-like, #twitter-widget-0, #twitter-widget-1 {
+	bottom: 10%;
+    position: absolute !important;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    left: 0px;
+    right: 0px;
+}
+
+#twitter-widget-1 {
+	background-color: #35465c !important;
+	border-radius: 4px;
+}
+
+#exampleModalCenterTitle {
+	font-family: Roboto;
+	font-weight: 1000;
+	word-spacing: 5px;
+}
