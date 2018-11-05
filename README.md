@@ -2,7 +2,7 @@
 INSTRUCTIONS
 ------------------------------------------------
 
-Start viewing the website by opening index.html present in the BeerO'Clock folder.
+Start viewing the website by opening index.html present in the project folder.
 
 Make sure you have a working internet connection.
 
