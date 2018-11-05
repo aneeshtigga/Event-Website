@@ -14,9 +14,9 @@ Not customized for mobile viewing.
 
 Alternatively...
 
-Copy the whole "BeerO'Clock" folder to the "htdocs" folder present in your server directory (xampp,lampp etc..).
+Move the files to a folder and paste it into the "htdocs" folder present in your server directory (xampp,lampp etc..).
 
-Open "localhost/BeerO'Clock" using your browser to view the website.
+Open "localhost/[folder_name]" using your browser to view the website.
 
 
 
